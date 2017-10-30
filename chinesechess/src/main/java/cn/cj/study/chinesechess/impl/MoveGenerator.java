@@ -1,5 +1,6 @@
 package cn.cj.study.chinesechess.impl;
 
+import cn.cj.study.chinesechess.BaseDefine;
 import cn.cj.study.chinesechess.api.IMoveGenerator;
 
 public class MoveGenerator extends IMoveGenerator {
@@ -16,7 +17,8 @@ public class MoveGenerator extends IMoveGenerator {
 		nTargetId = position[toY][toX];
 
 		switch (nMoceChessId) {
-
+		case BaseDefine.B_KING:
+			break;
 		}
 
 		return super.IsValidMove(position, fromX, fromY, toX, toY);
