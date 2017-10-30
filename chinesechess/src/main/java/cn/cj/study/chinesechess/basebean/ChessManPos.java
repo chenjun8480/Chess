@@ -1,4 +1,4 @@
-package cn.cj.study.basebean;
+package cn.cj.study.chinesechess.basebean;
 
 /**
  * 棋子坐标
