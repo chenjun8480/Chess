@@ -36,7 +36,7 @@ public class BaseDefine {
 	/** 红炮 */
 	public final static int R_CANON = 11;
 	/** 红士 */
-	public static int R_BISHOP = 12;
+	public final static int R_BISHOP = 12;
 	/** 红象 */
 	public final static int R_ELEPHANT = 13;
 	/** 红兵 */
@@ -50,7 +50,7 @@ public class BaseDefine {
 	 * @param x
 	 * @return
 	 */
-	public Boolean IsBlack(int x) {
+	public static Boolean IsBlack(int x) {
 		return x >= B_BEGIN && x <= B_END;
 	}
 
@@ -60,7 +60,7 @@ public class BaseDefine {
 	 * @param x
 	 * @return
 	 */
-	public Boolean IsRed(int x) {
+	public static Boolean IsRed(int x) {
 		return x >= R_BEGIN && x <= R_END;
 	}
 
@@ -73,5 +73,26 @@ public class BaseDefine {
 	 */
 	public Boolean IsSameSide(int x, int y) {
 		return (IsBlack(x) && IsBlack(y)) || (IsRed(x) && IsRed(y));
+	}
+
+	
+	/**
+	 * 初始棋局的摆法
+	 * 
+	 * @return
+	 */
+	public static Byte[][] getDefault() {
+		return new Byte[][] { 
+			{ 2, 3, 6, 5, 1, 5, 6, 3, 2 }, 
+			{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+			{ 0, 4, 0, 0, 0, 0, 0, 4, 0 },
+			{ 7, 0, 7, 0, 7, 0, 7, 0, 7 },
+			{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+			{ 0, 0, 0, 0, 0, 0, 0, 0, 0 },
+			{ 14, 0, 14, 0, 14, 0, 14, 0, 14 },
+			{ 0, 11, 0, 0, 0, 0, 0, 11, 0 },
+			{ 0, 0, 0, 0, 0, 0, 0, 0, 0 }, 
+			{ 9, 10, 13, 12, 8, 12, 13, 10, 9 } 
+		};
 	}
 }

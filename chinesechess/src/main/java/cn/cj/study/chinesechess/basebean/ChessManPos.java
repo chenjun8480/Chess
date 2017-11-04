@@ -7,22 +7,27 @@ package cn.cj.study.chinesechess.basebean;
  *
  */
 public class ChessManPos {
-	private Byte x;
-	private Byte y;
+	private int x;
+	private int y;
 
-	public Byte getX() {
+	public int getX() {
 		return x;
 	}
 
-	public void setX(Byte x) {
+	public void setX(int x) {
 		this.x = x;
 	}
 
-	public Byte getY() {
+	public int getY() {
 		return y;
 	}
 
-	public void setY(Byte y) {
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public ChessManPos(int x, int y) {
+		this.x = x;
 		this.y = y;
 	}
 

@@ -8,7 +8,7 @@ package cn.cj.study.chinesechess.basebean;
  */
 public class ChessMove {
 	/** 标明是什么棋子 */
-	private short chessId;
+	private int chessId;
 	/** 起始位置 */
 	private ChessManPos from;
 	/** 目标位置 */
@@ -16,11 +16,11 @@ public class ChessMove {
 	/** 值 */
 	private int score;
 
-	public short getChessId() {
+	public int getChessId() {
 		return chessId;
 	}
 
-	public void setChessId(short chessId) {
+	public void setChessId(int chessId) {
 		this.chessId = chessId;
 	}
 
